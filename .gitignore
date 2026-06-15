@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# next.js
+.next/
+out/
+**/.next/
+
+# production
+build/
+dist/
+
+# env files
+.env
+.env.local
+.env*.local
+**/.env
+**/.env.local
+
+# uploads (локальні завантаження)
+apps/backend/uploads/*
+!apps/backend/uploads/.gitkeep
+
+# logs
+*.log
+npm-debug.log*
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
