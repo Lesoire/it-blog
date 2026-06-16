@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { SITE } from '@/lib/site';
+﻿import Link from "next/link";
+import { SITE } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <div>
           <div className="kicker" style={{ marginBottom: 12 }}>розділи</div>
-          <div style={{ display: 'grid', gap: 6 }}>
+          <div style={{ display: "grid", gap: 6 }}>
             <Link href="/categories/frontend">Frontend</Link>
             <Link href="/categories/backend-devops">Backend та DevOps</Link>
             <Link href="/categories/ai-ml">ШІ та ML</Link>
@@ -21,14 +21,16 @@ export default function Footer() {
         </div>
         <div>
           <div className="kicker" style={{ marginBottom: 12 }}>сервіс</div>
-          <div style={{ display: 'grid', gap: 6 }}>
+          <div style={{ display: "grid", gap: 6 }}>
+            <Link href="/authors">Автори</Link>
+            <Link href="/about">Про нас</Link>
             <Link href="/search">Пошук</Link>
             <a href="/rss.xml">RSS</a>
             <a href="/sitemap.xml">Sitemap</a>
           </div>
         </div>
       </div>
-      <div className="container" style={{ marginTop: 28, fontSize: '0.82rem' }}>
+      <div className="container" style={{ marginTop: 28, fontSize: "0.82rem" }}>
         © {year} {SITE.name}. Навчальний проєкт.
       </div>
     </footer>
